@@ -17,7 +17,7 @@
         </div>
         <div class="" >
            <button class="btn btn-active btn-ghost text-center ">Sort by view</button>
-            <a href="blog.html" target="_blank"><button class="btn btn-active bg-red-500 text-white">Blog</button></a>
+            <a href="blog.html" target="_blank"><button class="btn btn-active bg-red-500 text-white md:ml-10 lg:ml-96">Blog</button></a>
         </div>
       </div>
 
@@ -29,11 +29,13 @@
             
           </div>
       </div>
+      
 
       <!-- cards -->
       <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <!-- <div class="card card-compact w-80 bg-base-100 shadow-xl">
             <figure><img src="img/Icon.png" alt="Shoes" /></figure>
+            <div class="absolute bottom-0 right-0 p-2 text-white rounded-lg  bg-slate-600"> 984783479 minutes</div>
             <div class="card-body">
               <h2 class="card-title">
                 <img src="img/Icon.png" class="rounded-full" alt="">
@@ -56,8 +58,16 @@
         
             </div>
           </div> -->
-      </div>
+          
     
+      </div>
+
+      <!-- no data -->
+      <div class="py-20 w-full hidden" id="no-data">
+        <img src="img/Icon.png" alt="" class="mx-auto">
+        <h1 class="text-4xl py-5 font-bold text-center">Oops!! Sorry, There is no <br>
+            content here</h1>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
