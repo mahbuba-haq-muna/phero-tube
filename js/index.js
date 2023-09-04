@@ -13,6 +13,7 @@ const handelCategories = async() =>{
         `;
         menuContainer.appendChild(div)
     });
+    
 
 }
 
@@ -25,6 +26,7 @@ const handelNews = async (elementId) => {
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML = "";
     const noData = document.getElementById('no-data')
+    
 
     if(data.data.length===0){
         noData.classList.remove('hidden')
@@ -58,8 +60,11 @@ const handelNews = async (elementId) => {
 
         cardContainer.appendChild(div)
     })
-    
+
 };
+
+
 
 handelCategories()
 handelNews("1000")
+handelSort()
